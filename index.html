@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Business</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+    <h2>My Business</h2>
+
+    <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+
+    <div class="hero-content">
+
+        <div class="hero-text">
+
+            <h1>Grow Your Business With a Powerful Website</h1>
+
+            <p>
+                We create modern, professional and mobile-friendly
+                websites that help businesses attract more customers.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#contact" class="btn">
+                    Get Started
+                </a>
+
+                <a href="#services" class="btn secondary-btn">
+                    Our Services
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-image">
+
+            <img
+                src="https://images.unsplash.com/photo-1556761175-b413da4baf72"
+                alt="Business team working"
+            >
+
+        </div>
+
+    </div>
+
+</section>
+   
+
+    <!-- About -->
+    <section id="about">
+
+        <h2>About Us</h2>
+
+        <p>
+            We provide professional digital solutions
+            for businesses looking to grow online.
+        </p>
+
+    </section>
+
+
+    <!-- Services -->
+    <section id="services">
+
+        <h2>Our Services</h2>
+
+        <div class="services">
+
+            <div class="card">
+                <h3>Website Development</h3>
+                <p>Modern and responsive websites for businesses.</p>
+            </div>
+
+            <div class="card">
+                <h3>Web Design</h3>
+                <p>Beautiful designs that attract customers.</p>
+            </div>
+
+            <div class="card">
+                <h3>Business Support</h3>
+                <p>Digital solutions to help your business grow.</p>
+            </div>
+
+        </div>
+
+    </section>
+    
+<section id="gallery">
+
+    <h2>Our Gallery</h2>
+
+    <div class="gallery">
+
+        <img src="https://picsum.photos/600/400?random=1" alt="Gallery Image 1">
+
+        <img src="https://picsum.photos/600/400?random=2" alt="Gallery Image 2">
+
+        <img src="https://picsum.photos/600/400?random=3" alt="Gallery Image 3">
+
+    </div>
+
+</section>
+
+<!-- Pricing -->
+<section id="pricing">
+
+    <h2>Our Packages</h2>
+
+    <p>Choose the package that fits your business.</p>
+
+    <div class="pricing">
+
+        <div class="price-card">
+            <h3>Basic</h3>
+            <h2>₹4,999</h2>
+
+            <p>✔ 1-Page Website</p>
+            <p>✔ Mobile Responsive</p>
+            <p>✔ WhatsApp Button</p>
+            <p>✔ Contact Details</p>
+
+            <a href="#contact" class="btn">Get Started</a>
+        </div>
+
+
+        <div class="price-card popular">
+            <h3>Professional</h3>
+            <h2>₹9,999</h2>
+
+            <p>✔ 5 Pages</p>
+            <p>✔ Responsive Design</p>
+            <p>✔ WhatsApp Integration</p>
+            <p>✔ Contact Form</p>
+            <p>✔ Gallery</p>
+
+            <a href="#contact" class="btn">Get Started</a>
+        </div>
+
+
+        <div class="price-card">
+            <h3>Premium</h3>
+            <h2>₹14,999</h2>
+
+            <p>✔ 8+ Pages</p>
+            <p>✔ Premium Design</p>
+            <p>✔ WhatsApp Integration</p>
+            <p>✔ Contact Form</p>
+            <p>✔ Gallery & Reviews</p>
+
+            <a href="#contact" class="btn">Get Started</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Testimonials -->
+<section id="testimonials">
+
+    <h2>What Our Customers Say</h2>
+
+    <div class="testimonials">
+
+        <div class="testimonial">
+            <p>
+                "Excellent service and a very professional website.
+                Highly recommended!"
+            </p>
+            <h3>Rahul</h3>
+            <span>Business Owner</span>
+        </div>
+
+        <div class="testimonial">
+            <p>
+                "They understood exactly what we needed and
+                delivered a beautiful website."
+            </p>
+            <h3>Priya</h3>
+            <span>Restaurant Owner</span>
+        </div>
+
+        <div class="testimonial">
+            <p>
+                "Our new website looks great on both mobile
+                and desktop. Very happy with the result."
+            </p>
+            <h3>Arjun</h3>
+            <span>Shop Owner</span>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Contact -->
+<section id="contact">
+
+    <h2>Contact Us</h2>
+
+    <p>Have a question? Send us a message!</p>
+
+    <form id="contactForm">
+
+        <input
+            type="text"
+            id="name"
+            placeholder="Your Name"
+            required
+        >
+
+        <input
+            type="tel"
+            id="phone"
+            placeholder="Your Phone Number"
+            required
+        >
+
+        <textarea
+            id="message"
+            placeholder="Your Message"
+            rows="5"
+            required
+        ></textarea>
+
+        <button type="submit">Send Message</button>
+
+    </form>
+
+</section>
+
+<script>
+
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const phone = document.getElementById("phone").value;
+    const message = document.getElementById("message").value;
+
+    const whatsappNumber = "919876543210";
+
+    const text =
+        "Hello!%0A%0A" +
+        "Name: " + name + "%0A" +
+        "Phone: " + phone + "%0A" +
+        "Message: " + message;
+
+    const whatsappURL =
+        "https://wa.me/" + whatsappNumber + "?text=" + text;
+
+    window.open(whatsappURL, "_blank");
+
+});
+
+</script>
+
+</body>
+</html>
